@@ -19,7 +19,7 @@ Execução:
 """
 
 __version__ = "0.0.1"
-__author__ =  "Emerson Rocha"
+__author__  =  "Emerson Rocha"
 __license__ = "Unlicense"
 
 import os
