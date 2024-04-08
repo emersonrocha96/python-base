@@ -14,7 +14,7 @@ Temos apenas %(qtd)d disponiveis, valor promocional de %(preco).2f
 Acesse já o nosso site %(link)s e garanta sua vaga!
 """
 
-clientes = ["Marcos","Felipe", "Emerson"]
+clientes = ["Marcos","Felipe", "Emerson", "Maria", "Rafaela", "Jéssica"]
 
 for cliente in clientes:
     print(
