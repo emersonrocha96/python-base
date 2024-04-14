@@ -57,8 +57,8 @@ for nome_atividade, atividade in atividades:
 # Utilizando a interpolação com format para exibir o label recebido seguido da lista de
 # alunos inscritos na respectiva atividade.
 
-    print (f"{nome_atividade} Sala 1: ", atividade_sala1)
-    print(f"{nome_atividade}  Sala 2: ", atividade_sala2)
+    print("Sala 1: ", atividade_sala1)
+    print("Sala 2: ", atividade_sala2)
 
 # Fazendo um divisor de 30 caracteres para melhorar a saída dos dados
     print ()
