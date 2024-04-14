@@ -36,16 +36,31 @@ ele estiver na sala 2, inclua ele na lista
 sala_de_ingles2.
 """
 
+# Para o nome_atividade será exibido o label atribuido juntamente com a respectiva
+# atividade em cada volta que o laço for executado, por exemplo: A primeira atividade será inglês
 for nome_atividade, atividade in atividades:
+    print()
+    print("-" * 30)
+    print(f"Aluno da atividade {nome_atividade}")
+    print("-" * 30)
+    print()
+        
+    atividade_sala1 = []
+    atividade_sala2 = []
 
-	atividade_sala1 = []
-	atividade_sala2 = []
+    for aluno in atividade:
+    	if aluno in sala1:
+    		atividade_sala1.append(aluno)
+    	elif aluno in sala2:
+    		atividade_sala2.append(aluno)
+    		
+# Utilizando a interpolação com format para exibir o label recebido seguido da lista de
+# alunos inscritos na respectiva atividade.
 
-	for aluno in atividade:
-		if aluno in sala1:
-			atividade_sala1.append(aluno)
-		elif aluno in sala2:
-			atividade_sala2.append(aluno)
+    print (f"{nome_atividade} Sala 1: ", atividade_sala1)
+    print(f"{nome_atividade}  Sala 2: ", atividade_sala2)
 
-	print (f"{nome_atividade} Sala 1: ", atividade_sala1)
-	print(f"{nome_atividade}  Sala 2: ", atividade_sala2)
+# Fazendo um divisor de 30 caracteres para melhorar a saída dos dados
+    print ()
+    print("#" * 30)
+    
